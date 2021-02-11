@@ -5,15 +5,16 @@
 }
 
 body {
-  background-color: white;
+  background-color: #ccc;
   font-family: 'Poppins', sans-serif;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   text-align: center;
+  overflow-x: hidden;
   height: 100vh;
-  overflow: hidden;
   margin: 0;
 }
 
@@ -35,4 +36,23 @@ body {
 
 .btn:focus {
   outline: none;
+}
+
+@media(max-width: 768px) {
+  .btn {
+    background-color: yellow;
+    border-radius: 5px;
+    border: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem auto;
+    padding: 10px 2.5rem;
+    font-size: 1.2rem;
+    font-family: inherit;
+    cursor: pointer;
+  }
 }
